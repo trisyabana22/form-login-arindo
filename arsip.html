@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body class="font-poppins h-[100vh]">
+    <div class="flex flex-wrap justify-center lg:justify-start h-[100vh]">
+      <div class="hidden lg:block lg:w-[55%]">
+        <img src="dist/img/bg-2.png" class="lg:w-full lg:h-[100vh] lg:box-border object-cover" alt="" />
+      </div>
+      <div class="w-full lg:w-[45%] md:w-[65%]">
+        <div class="flex items-center justify-center lg:w-[70%] mx-auto lg:h-full">
+          <div class="w-full">
+            <header>
+              <div class="container px-4 md:px-2">
+                <div class="flex">
+                  <div class="w-full">
+                    <div class="pt-7">
+                      <img src="dist/img/logo.png" class="mx-auto w-[35%] lg:w-[25%]" alt="" />
+                    </div>
+                    <div class="text-center">
+                      <h1 class="font-medium text-zinc-600 text-base mb-2 lg:text-2xl">User Login</h1>
+                      <p class="text-xs text-gray-500 lg:text-sm">
+                        Selamat datang di layanan aplikasi <br />
+                        <span class="font-semibold">PPOB Arindo</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <section class="pt-6">
+              <form action=""></form>
+              <div class="container px-4">
+                <div class="flex">
+                  <div class="w-full">
+                    <div>
+                      <label for="username" class="relative block my-7">
+                        <span class="text-xs text-zinc-600 lg:text-sm">Username</span>
+                        <input type="text" id="username" placeholder="Ketikan Username" class="text-zinc-600 bg-slate-50 p-2 text-xs lg:text-sm block w-full rounded-lg" />
+                      </label>
+                    </div>
+                    <div>
+                      <label for="password" class="relative block my-7">
+                        <span class="text-xs text-zinc-600 lg:text-sm">Password</span>
+                        <span> </span>
+                        <input type="password" id="password" placeholder="Ketikan Password" class="text-zinc-600 bg-slate-50 p-2 text-xs lg:text-sm block w-full rounded-lg" />
+                      </label>
+                    </div>
+                    <div class="flex flex-wrap items-end">
+                      <div class="w-full">
+                        <span class="text-xs text-zinc-600 lg:text-sm">Jalur / Network</span>
+                        <div class="flex">
+                          <select name="" id="" class="text-xs lg:text-sm block text-zinc-600 bg-slate-50 p-2 w-1/2">
+                            <option value="" selected>Normal / Default</option>
+                          </select>
+                          <label for="s" class="flex items-center w-1/2 pl-6">
+                            <input type="checkbox" id="s" class="accent-indigo-800" name="" id="" />
+                            <span class="text-xs text-zinc-600 pl-1 lg:text-sm">Input Terminal ID</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-9">
+                      <button class="block w-full text-xs lg:text-sm bg-indigo-800 p-2 text-white rounded-lg">Login</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

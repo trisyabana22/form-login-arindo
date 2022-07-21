@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <!-- <style>
+      * {
+        border: 1px solid red;
+        box-sizing: border-box;
+      }
+    </style> -->
+    <title>Document</title>
+  </head>
+  <body class="h-[100vh] font-poppins">
+    <div class="loader fixed right-0 left-0 top-0 bottom-0 z-10 flex h-full w-full flex-col items-center justify-center bg-zinc-900 text-white opacity-100">
+      <div class="animate-bounce rounded-full border border-white bg-white p-2">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+        </svg> -->
+        <img src="dist/img/logo.png" class="w-20" alt="" />
+      </div>
+      <p class="animate-pulse p-4 text-center text-white">Loading...</p>
+    </div>
+    <div class="flex h-full flex-wrap">
+      <div class="container hidden md:block md:w-[55%] md:bg-blue-900">
+        <div class="h-full md:flex md:items-center">
+          <img src="dist/img/bg-produk-2.png" class="imagess hidden -translate-x-full opacity-0 transition-all duration-500 hover:scale-125 md:mx-auto md:block md:w-[60%]" alt="" />
+        </div>
+      </div>
+      <div class="content container mx-auto max-w-md opacity-0 transition-all duration-1000 md:w-[40%]">
+        <div class="hidden sm:absolute sm:inset-0 sm:-z-10 sm:block sm:h-[45%] sm:w-full sm:bg-blue-900 md:hidden"></div>
+        <div class="box-border flex h-[99vh] items-center">
+          <div class="w-full sm:rounded-md sm:bg-white sm:p-9 sm:shadow-lg md:bg-transparent md:p-0 md:shadow-none">
+            <header class="py-6">
+              <div class="text-center">
+                <img src="dist/img/logo.png" class="mx-auto w-24 text-center sm:w-28" alt="" />
+                <div>
+                  <h1 class="p-1 text-base font-medium text-zinc-700 sm:text-2xl">User Login</h1>
+                  <p class="text-xs text-zinc-500 sm:text-sm">
+                    Selamat datang di layanan <span class="block">aplikasi <span class="font-bold">PPOB Arindo</span></span>
+                  </p>
+                </div>
+              </div>
+            </header>
+            <section class="px-6">
+              <form action="">
+                <div class="pb-4">
+                  <label for="username" class="block">
+                    <span class="block py-1 text-xs text-zinc-700 sm:text-sm">Username</span>
+                    <input type="text" placeholder="Masukan Username" class="w-full rounded-md bg-zinc-50 p-2 text-xs text-zinc-700 focus:border-blue-900 focus:outline-none focus:ring-1 focus:ring-blue-900 sm:text-sm" id="username" />
+                  </label>
+                </div>
+                <div class="pb-4">
+                  <label for="">
+                    <span class="block py-1 text-xs text-zinc-700 sm:text-sm">Password</span>
+                    <div class="relative block">
+                      <input type="password" placeholder="Masukan password" class="password-input w-full rounded-md bg-zinc-50 p-2 pr-8 text-xs text-zinc-700 focus:border-blue-900 focus:outline-none focus:ring-1 focus:ring-blue-900 sm:text-sm" name="" id="" />
+
+                      <span class="absolute inset-y-0 right-2 flex items-center">
+                        <a href="javascript:void(0)" class="toggle-password text-zinc-700">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="show-password hidden h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round " stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="hide-password h-4 w-4 sm:h-5 sm:w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21"
+                            />
+                          </svg>
+                        </a>
+                      </span>
+                    </div>
+                  </label>
+                </div>
+                <div>
+                  <label for="" class="block py-1 text-xs text-zinc-700 sm:text-sm">Jalur / Network</label>
+                  <div class="flex items-center">
+                    <select name="" id="" class="block w-1/2 rounded-md bg-zinc-50 p-2 text-xs text-zinc-700 focus:border-blue-900 focus:outline-none focus:ring-1 focus:ring-blue-900 sm:text-sm">
+                      <option value="1">Normal / Default</option>
+                      <option value="2">Hybrid</option>
+                    </select>
+                    <label for="terminal" class="pl-4 text-xs text-zinc-700 sm:text-sm"> <input type="checkbox" name="" class="text-sm accent-blue-900" id="terminal" /> &nbsp;Input Terminal ID </label>
+                  </div>
+                </div>
+                <div class="pt-11">
+                  <button class="w-full rounded-md bg-blue-800 p-2 text-xs text-white transition-all duration-300 hover:bg-blue-900 sm:text-sm">Login</button>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
